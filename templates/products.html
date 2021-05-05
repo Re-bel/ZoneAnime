@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock title %}
+
+{% block body %}
+<main>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <style>
+          .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        </style>
+
+        <div class="container-fluid px-0">
+
+          <img src="/static/product.jfif" alt="Snow" style="width:1268px;height:525px">
+          <div class="centered" style="font-size:70px;color:#0e7788"><b>Products</b></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="product-device shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 mb-5 my-5" style="padding-left:60px">
+    <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="width:560px">
+      <div class="my-3 py-3">
+        <h2 class="display-5">Hoodies/Jackets</h2>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/hoodies"><img src="/static/hoodies.jfif" alt="Snow" style="width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+    <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:560px">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Joggers</h2>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/joggers"><img src="/static/joggers.jfif" alt="Snow" style="width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 mb-5" style="padding-left:60px">
+    <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden"
+      style="width:560px">
+      <div class="my-3 py-3">
+        <h2 class="display-5" style="color:black">Facemasks</h2>
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/facemasks"><img src="/static/facemasks.jfif" alt="Snow"
+            style="height:315px;width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+    <div class="bg-warning me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:560px">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Cosplay</h2>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/cosplay"><img src="/static/cosplay.jfif" alt="Snow" style="width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-md-flex flex-md-equal w-100 mb-5" style="padding-left:60px">
+    <div class="bg-danger me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="width:560px">
+      <div class="my-3 py-3">
+        <h2 class="display-5" style="color:black">Backpacks</h2>
+      </div>
+      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/backpacks"><img src="/static/backpacks.jfif" alt="Snow"
+            style="height:308px;width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+    <div class="bg-info me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="width:560px">
+      <div class="my-3 p-3">
+        <h2 class="display-5">Rings</h2>
+
+      </div>
+      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <a href="/rings"><img src="/static/rings.jfif" alt="Snow" style="width:100%;border-radius:15px"></a>
+      </div>
+    </div>
+  </div>
+  {% endblock body %}

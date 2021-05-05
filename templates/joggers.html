@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Joggers{% endblock title %}
+
+{% block body %}
+<h1 style="text-align:center;font-size:116px;font-family:Comic Sans MS">Joggers</h1>
+<hr>
+    <div class="row px-5">
+        {% for jogger in joggers %}
+        <div class="col my-4">
+            <div class="card" style="width: 23rem;">
+                <img src="{{ jogger.image_url }}" class="card-img-top" alt="..." style="height:400px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ jogger.name }}</h5>
+                    <p class="card-text">Rs.{{ jogger.price }}</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock body %}

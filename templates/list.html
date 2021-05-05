@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Top Anime{% endblock title %}
+
+{% block body %}
+<h1 style="text-align:center;"><strong>Top Anime Series</strong></h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Ratings</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for list in lists %}
+        <tr>
+            <th scope="row">{{ list.rank }}</th>
+            <td><img src="{{ list.image_url }}" alt="..." style="width:100px;height:100px;"><b>
+                    <a href="{{ list.video_url }}">{{ list.name }}</a>
+                </b></td>
+            <td>{{ list.rating }}</td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+</table>
+{% endblock body %}

@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block body %}
+<main>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/4.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="background-color:black;text-align:left;width:280px;border-radius:17px" style><b>Sung Jin-Woo</b>
+          </h1>
+          <p style="background-color:black;text-align:left;width:225px;border-radius:10px;font-size:130%"> Manhwa: Solo
+            Leveling</p>
+          <p style="text-align:left"><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/6.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="background-color:black;text-align:left;width:367px;border-radius:17px"><b>Naruto and Minato</b>
+          </h1>
+          <p style="background-color:black;text-align:left;width:145px;border-radius:10px;font-size:130%">Anime: Naruto
+          </p>
+          <p style="text-align:left"><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/5.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="background-color:black;text-align:left;width:310px;border-radius:17px"><b>Natsu Dragneel</b></h1>
+          <p style="background-color:black;text-align:left;width:160px;border-radius:10px;font-size:130%">Anime: Fairy
+            tail</p>
+          <p style="text-align:left"><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4 my-5">
+         <img src="/static/juju.jfif" alt="juju" style="width:250px;border-radius:70%;height:250px;">
+         <h2>Jujutsu Kaisen</h2>
+         <p>A boy swallows a cursed talisman - the finger of a demon - and becomes cursed himself. He enters a shaman's school to be able to locate the demon's other body parts and thus exorcise himself.
+        </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 my-5">
+        <img src="/static/attack.jfif" alt="juju" style="width:250px;border-radius:70%;height:250px;">
+         <h2>Attack On Titan</h2>
+         <p> After his hometown is destroyed and his mother is killed, young Eren Jaeger vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.
+          </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 my-5">
+        <img src="/static/hero.jfif" alt="juju" style="width:250px;border-radius:70%;height:250px;">
+         <h2>My Hero Acadamia</h2>
+         <p>A superhero-loving boy without any powers is determined to enroll in a prestigious hero academy and learn what it really means to be a hero.  </p>
+        <p><a class="btn btn-secondary" href="#">View details »</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+    <h1 style="text-align:center;margin-bottom:2cm;"><b>Popular Anime</b></h1>
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Demon Slayer <span class="text-muted">It’ll blow your mind.</span>
+        </h2>
+        <p class="lead">From the earliest times, the humanity knows about human-flesh eating monsters, lurking in the darkness to devour an unfortunate soul that does not trust rumors. However, the rumors also mention an elite corps of demon hunters, skilled assassins, killing demons. Demon Slayer focuses on Tanjirou Kamado, who is still very young, but is the only man in his family. One day, Tanjirou decides to go down to the local village to make a little money, selling charcoal. When he returns back, he becomes an unwilling part of these horrifying rumors: his family is slaughtered and the only survivor, his sister Nezuko, is turned into demon. For some reason, Nezuko still acts as a human, which is the reason for Tanjirou to join demon slayers and cure his sister. Will he manage to join the elite corps and cure his sister?
+        </p>
+      </div>
+      <div class="col-md-5">
+        <a href="#"><img src="/static/demon.jfif" alt="..." style="width:500px;height:500px;"></a>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Fullmetal alchemist:Brotherhood<span class="text-muted"> it’s that good.</span></h2>
+        <p class="lead">Two brothers lose their mother to an incurable disease. With the power of "alchemy", they use taboo knowledge to resurrect her. The process fails, and as a toll for using this type of alchemy, the older brother, Edward Elric loses his left leg while the younger brother, Alphonse Elric loses his entire body. To save his brother, Edward sacrifices his right arm and is able to affix his brother's soul to a suit of armor. With the help of a family friend, Edward receives metal limbs - "automail" - to replace his lost ones. With that, Edward vows to search for the Philosopher's Stone to return the brothers to their original bodies, even if it means becoming a "State Alchemist", one who uses his/her alchemy for the military.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <a href="#"><img src="/static/fullmetal.jfif" alt="..." style="width:400px;height:400px;"></a>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Hunter x Hunter <span class="text-muted">checkout.</span></h2>
+        <p class="lead">Gon Freecss is a young boy living on Whale Island. He learns from "Hunter" Kite, that his father, who he was told was dead, is still alive somewhere as a top "Hunter," risking his life to seek unknown items, such as hidden treasures, curiosa, exotic living creatures, etc. Gon decides to become a professional Hunter and leaves the island. To become a Hunter, he must pass the Hunter Examination, where he meets and befriends three other applicants: Kurapika, Leorio and Killua. Can Gon pass this formidable hurdle, the Hunter Examination, to become "the Best Hunter in the World" and eventually meet his father?</p>
+      </div>
+      <div class="col-md-5">
+        <a href="#"><img src="/static/hunter.jfif" alt="..." style="width:500px;height:500px;"></a>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  
+</main>
+{% endblock body %}

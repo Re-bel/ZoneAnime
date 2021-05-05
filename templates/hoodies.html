@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Hoodies/Jackets{% endblock title %}
+
+{% block body %}
+<h1 style="text-align:center;font-size:116px;font-family:Comic Sans MS">Hoodies/Jackets</h1>
+<hr>
+    <div class="row px-5">
+        {% for hoodie in hoodies %}
+        <div class="col my-4">
+            <div class="card" style="width: 23rem;">
+                <img src="{{ hoodie.image_url }}" class="card-img-top" alt="..." style="height:315px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ hoodie.name }}</h5>
+                    <p class="card-text">Rs.{{ hoodie.price }}</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+
+    {% endblock body %}

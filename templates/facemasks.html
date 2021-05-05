@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Facemasks{% endblock title %}
+
+{% block body %}
+<h1 style="text-align:center;font-size:116px;font-family:Comic Sans MS">Face Masks</h1>
+<hr>
+    <div class="row px-5">
+        {% for facemask in facemasks %}
+        <div class="col my-4">
+            <div class="card" style="width: 22rem;">
+                <img src="{{ facemask.image_url }}" class="card-img-top" alt="..." style="height:370px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ facemask.name }}</h5>
+                    <p class="card-text">Rs.{{ facemask.price }}</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock body %}
+

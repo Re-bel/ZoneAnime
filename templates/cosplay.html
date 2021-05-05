@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Cosplay{% endblock title %}
+
+{% block body %}
+<h1 style="text-align:center;font-size:116px;font-family:Comic Sans MS">Cosplay</h1>
+<hr>
+    <div class="row px-5">
+        {% for cosplay in cosplays %}
+        <div class="col my-4">
+            <div class="card" style="width: 22rem;">
+                <img src="{{ cosplay.image_url }}" class="card-img-top" alt="..." style="height:370px">
+                <div class="card-body">
+                    <h5 class="card-title">{{ cosplay.name }}</h5>
+                    <p class="card-text">Rs.{{ cosplay.price }}</p>
+                    <a href="#" class="btn btn-primary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock body %}
